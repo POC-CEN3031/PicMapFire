@@ -51,7 +51,7 @@ export default class AuthData {
       this.firebaseHelper.updatePublicProfile();
       const snapshot = await this.firebaseHelper.getPrivacySettings(user.uid);
       const settings = snapshot.val();
-      
+      //Shows the settings for people
       if (!settings) {
         this.privacySettings.showPrivacyDialog();
       } else if (settings.content === true) {
