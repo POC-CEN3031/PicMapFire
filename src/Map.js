@@ -97,7 +97,7 @@ var infoWin = new google.maps.InfoWindow();
     var markerCluster = new MarkerClusterer(map, markers,
         { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
 }
-
+//adds user pins to map with posts
 var a = {lat: 25.76, lng: -80.19, info: '<a href="https://pocs-92a3c.firebaseapp.com/post/-LSqPd2utEKwvTVBzf5y">View Post</a>'};
 var b = {lat: 40.70, lng: -74.00, info: '<a href="https://pocs-92a3c.firebaseapp.com/post/-LSqPfS9ZuSuCFSzVTea">View Post</a>'};
 var c = {lat: 34.05, lng: -118.2, info: '<a href="https://pocs-92a3c.firebaseapp.com/post/-LSqPiBZYiCfiSxmAphN">View Post</a>'};
