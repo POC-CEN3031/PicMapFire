@@ -41,7 +41,7 @@ export default class AuthData {
 
     this.auth.onAuthStateChanged((user) => this.onAuthStateChanged(user));
   }
-
+ 
   /**
    * Displays the signed-in user information in the UI or hides it and displays the
    * "Sign-In" button if the user isn't signed-in.
@@ -51,7 +51,7 @@ export default class AuthData {
       this.firebaseHelper.updatePublicProfile();
       const snapshot = await this.firebaseHelper.getPrivacySettings(user.uid);
       const settings = snapshot.val();
-      // display privacy modal if there are no privacy preferences
+      
       if (!settings) {
         this.privacySettings.showPrivacyDialog();
       } else if (settings.content === true) {
