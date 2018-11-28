@@ -49,7 +49,7 @@ Then open [http://localhost:5000](http://localhost:5000)
 ## Deploy the app
 
 To deploy the app run:
-
+ 
 ```bash
 firebase deploy
 ```
