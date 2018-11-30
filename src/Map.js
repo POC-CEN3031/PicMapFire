@@ -49,6 +49,9 @@ export default class Map {
     // // Event bindings.
     // this.newPostsButton.click(() => this.showNewPosts());
     initMap();
+    const googleMapsClient = require('@google/maps').createClient({
+      key: 'AIzaSyDX4CQXYTt_oUiaWlOhgwMZEpbMReiaa4M'
+    });
   }
 
 
