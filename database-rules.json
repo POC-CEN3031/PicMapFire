@@ -1,11 +1,15 @@
 {
   "rules": {
     // Admin access.
-    ".read": "auth.token.admin === true",
-    ".write": "auth.token.admin === true",
+    
+      ".read": true,
+      ".write": true
+    
+    // ".read": "auth.token.admin === true",
+    // ".write": "auth.token.admin === true",
     "admins": {
-      ".read": "false",  // Only a cloud function or admins can update this.
-      ".write": "false",  // Only a cloud function or admins can update this.
+      ".read": "false", // Only a cloud function or admins can update this.
+      ".write": "false", // Only a cloud function or admins can update this.
       "$index": {
         "email": {
           ".validate": "newData.isString()"
@@ -25,7 +29,10 @@
     // List of all Posts.
     "posts": {
       ".read": true,
-      ".indexOn": ["author/uid", "timestamp"], // Allow searching for posts by authors. Useful for deletion.
+      ".indexOn": [
+        "author/uid",
+        "timestamp"
+      ], // Allow searching for posts by authors. Useful for deletion.
       "$postId": {
         ".write": "!data.exists() || data.exists() && auth.uid === data.child('author').child('uid').val()", // Allow new writes and allow updates and deletes to own posts.
         ".validate": "newData.child('author').child('uid').exists() && newData.child('text').exists()",
@@ -127,7 +134,10 @@
     },
     // Public profile information.
     "people": {
-      ".indexOn": ["_search_index/full_name", "_search_index/reversed_full_name"],
+      ".indexOn": [
+        "_search_index/full_name",
+        "_search_index/reversed_full_name"
+      ],
       ".read": true,
       "$uid": {
         ".write": "auth.uid === $uid",
