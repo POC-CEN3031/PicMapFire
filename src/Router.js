@@ -53,6 +53,7 @@ export default class Router {
     page('/', () => {this.redirectHomeIfSignedIn(); this.displayPage('splash');});
     page('/home', () => {showHomeFeed(); this.displayPage('feed', true);});
     page('/recent', () => {showGeneralFeed(); this.displayPage('feed');});
+    page('/map', () => {clearFeed(); this.displayPage('map');});
     page('/post/:postId', (context) => {showPost(context.params.postId); this.displayPage('post');});
     page('/user/:userId', (context) => {loadUser(context.params.userId); this.displayPage('user-info');});
     page('/search/:hashtag', (context) => {searchHashtag(context.params.hashtag); this.displayPage('search');});
