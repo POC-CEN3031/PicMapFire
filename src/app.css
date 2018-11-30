@@ -998,3 +998,8 @@ dialog + .backdrop { /* polyfill */
 .fp-hashtag {
   font-size: 30px;
 }
+
+#map {
+  height: 50vh;
+}
+/* Optional: Makes the sample page fill the window. */
