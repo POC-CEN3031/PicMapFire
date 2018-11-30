@@ -59,8 +59,13 @@ export default class Map {
 };
 var map;
 function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
+  var map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: 29.643439, lng:  -82.356024 },
-    zoom: 2
+    zoom: 3
+  });
+  var UF = {lat: 29.643439, lng:  -82.356024};
+  var marker = new google.maps.Marker({
+    position: UF,
+    map: map
   });
 }
