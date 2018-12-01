@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 'use strict';
-
+ 
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/database';
@@ -32,7 +32,7 @@ export default class FirebaseHelper {
   static get POSTS_PAGE_SIZE() {
     return 3;
   }
-
+    
   /**
    * Number of posts loaded initially and per page for the User Profile page.
    * @return {number}
@@ -40,7 +40,7 @@ export default class FirebaseHelper {
   static get USER_PAGE_POSTS_PAGE_SIZE() {
     return 6;
   }
-
+       
   /**
    * Number of posts loaded initially and per page for the hashtag search page.
    * @return {number}
@@ -56,7 +56,7 @@ export default class FirebaseHelper {
   static get COMMENTS_PAGE_SIZE() {
     return 3;
   }
-
+          
   /**
    * Initializes this Firebase facade.
    * @constructor
@@ -70,7 +70,7 @@ export default class FirebaseHelper {
     // Firebase references that are listened to.
     this.firebaseRefs = [];
   }
-
+ 
   /**
    * Turns off all Firebase listeners.
    */
