@@ -3,7 +3,7 @@
     // Admin access.
     
       ".read": true,
-      ".write": true
+      ".write": true,
     
     // ".read": "auth.token.admin === true",
     // ".write": "auth.token.admin === true",
