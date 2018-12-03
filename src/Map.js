@@ -80,7 +80,9 @@ var infoWin = new google.maps.InfoWindow();
     // The map() method here has nothing to do with the Google Maps API.
     var markers = locations.map(function (location, i) {
         var marker = new google.maps.Marker({
-            position: location
+            position: location,
+            animation: google.maps.Animation.DROP,
+
         });
         google.maps.event.addListener(marker, 'click', function (evt) {
             infoWin.setContent(location.info);
@@ -88,6 +90,8 @@ var infoWin = new google.maps.InfoWindow();
         })
         return marker;
     });
+
+    
 
     // Add a marker clusterer to manage the markers.
     var markerCluster = new MarkerClusterer(map, markers,
@@ -109,4 +113,3 @@ var locations = [
     a,b
     //,c,d,e,f,g,h,i,j
 ]
-
