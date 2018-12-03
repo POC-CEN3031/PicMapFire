@@ -1,8 +1,8 @@
 {
-  "name": "Friendly Pix",
-  "short_name": "FriendlyPix",
+  "name": "PicMap",
+  "short_name": "PicMap",
   "icons": [{
-    "src": "/images/icon-128x128.png",
+    "src": "/images/icon-map.png",
     "sizes": "128x128",
     "type": "image/png"
   }, {
