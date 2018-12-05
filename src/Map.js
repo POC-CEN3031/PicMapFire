@@ -71,7 +71,7 @@ function initMap() {
     // });
 
     // Create an array of alphabetical characters used to label the markers.
-    var labels = 'AB';
+    var labels = 'ABCDEFGHIJK';
 
 var infoWin = new google.maps.InfoWindow();
     // Add some markers to the map.
@@ -98,18 +98,19 @@ var infoWin = new google.maps.InfoWindow();
         { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
 }
 
-var a = {lat: 25.76, lng: -80.19, info: '<a href="https://pocs-92a3c.firebaseapp.com/post/-LSlne6dNqKLm5y6oUO3">View Post</a>' };
-var b = {lat: 40.70, lng: -74.00, info:"https://pocs-92a3c.firebaseapp.com/post/-LSlne6dNqKLm5y6oUO3" };
-// var c = {lat: 34.05, lng: 118.2, info: };
-// var d = {lat: 42.36, lng: 71.06, info: };
-// var e = {lat: 29.76, lng: 95.37, info: };
-// var f = {lat: 47.61, lng: 122.3, info: };
-// var g = {lat: 33.75, lng: 84.39, info: };
-// var h = {lat: 41.88, lng: 87.63, info: };
-// var i = {lat: 28.54, lng: 81.38, info: };
-// var j = {lat: 32.77, lng: 96.79, info: };
+var a = {lat: 25.76, lng: -80.19, info: '<a href="https://pocs-92a3c.firebaseapp.com/post/-LSqPd2utEKwvTVBzf5y">View Post</a>'};
+var b = {lat: 40.70, lng: -74.00, info: '<a href="https://pocs-92a3c.firebaseapp.com/post/-LSqPfS9ZuSuCFSzVTea">View Post</a>'};
+var c = {lat: 34.05, lng: -118.2, info: '<a href="https://pocs-92a3c.firebaseapp.com/post/-LSqPiBZYiCfiSxmAphN">View Post</a>'};
+var d = {lat: 42.36, lng: -71.06, info: '<a href="https://pocs-92a3c.firebaseapp.com/post/-LSqPlqICNL57Vy41vUq">View Post</a>'};
+var e = {lat: 29.76, lng: -95.37, info: '<a href="https://pocs-92a3c.firebaseapp.com/post/-LSqPoJ525He84P-Dqy8">View Post</a>'};
+var f = {lat: 47.61, lng: -122.3, info: '<a href="https://pocs-92a3c.firebaseapp.com/post/-LSqPrFkc1EzIqpMHbhJ">View Post</a>'};
+var g = {lat: 29.621121, lng: -82.384297, info: '<a href="https://pocs-92a3c.firebaseapp.com/post/-LSqRW3r8kUyF4TZ0Y9e">View Post</a>'};
+var h = {lat: 29.673993, lng: -82.302031, info: '<a href="https://pocs-92a3c.firebaseapp.com/post/-LSqRRshiH_5MWgPArJX">View Post</a>'};
+var i = {lat: 29.649549, lng: -82.348479, info: '<a href="https://pocs-92a3c.firebaseapp.com/post/-LSqRUBarU7pQ2J8Hj_m">View Post</a>'};
+var j = {lat: 29.649551, lng: -82.323930, info: '<a href="https://pocs-92a3c.firebaseapp.com/post/-LSqRP3_D12_xMH1xIhq">View Post</a>'};
+var k = {lat: 29.637226, lng: -82.339052, info: '<a href="https://pocs-92a3c.firebaseapp.com/post/-LSqRMEf367ytVx6F2Tk">View Post</a>'};
+
 
 var locations = [
-    a,b
-    //,c,d,e,f,g,h,i,j
+    a,b,c,d,e,f,g,h,i,j,k
 ]
