@@ -6,8 +6,8 @@ PicMap is a place where you can share photos, follow friends, comment on photos.
 To see it in action, have a look at [Put hosting here]
 
 
-##Technology used
-Pic Map is made using Google Firebase app templet
+## Technology used
+# Pic Map is made using Google Firebase app templet
 
 The PicMap frontend is built using JavaScript, [Firebase](https://firebase.google.com/docs/web/setup) and jQuery.
 
@@ -20,19 +20,13 @@ Javascript Runtime dependencies as well as Build and deploy dependecies are mana
 Server-side micro-services are built on [Cloud Functions for Firebase](https://firebase.google.com/docs/functions).
 
 
-## Create and configure your Firebase Project
+## Run the project
 
 1. In a console run `npm install` to install all Build/Deploy tools dependencies.
 1. Create a Firebase project using the [Firebase Console](https://firebase.google.com/console).
 1. Visit the **Storage** section and enable storage by clicking the **Getting Started** button.
 1. Enable **Google** as a Sign in provider in **Firebase Console > Authentication > Sign in Method** tab.
 1. In a console run `firebase use --add` and, when prompted, select the Firebase Project you have just created. This will make sure the Firebase CLI is configured to use your particular project.
-1. [Optional] To enable the automatic inapropriate image blurring, [Enable the Cloud Vision API](https://console.cloud.google.com/apis/api/vision.googleapis.com/overview?project=_) on your project and enable Billing.
-1. [Optional] To enable email notifications for flagged content, set your Mailgun API credentials using:
-    ```bash
-    firebase functions:config:set mailgun.domain=friendly-pix.com mailgun.key=key-XXXXXXXXXXXXXXXX
-    ```
-1. [Optional] To enable IP-based geolocation filters, [Enable the Geolocation API](https://console.cloud.google.com/apis/library/geolocation.googleapis.com/?project=_) and the [Geocoding API](https://console.cloud.google.com/apis/library/geocoding-backend.googleapis.com/?project=_) on your project.
 
 
 ## Start a local development server
@@ -66,6 +60,6 @@ Then this deploys a new version of your code that will be served from `https://<
 
 ## Admins
 
-To make a user an admin - allowing him to delete any posts - manually add an entry to `/admins/$index/email: admin@email.com`. For instance `/admins/1/email: bob@gmail.com`.
+To make a user an admin - allowing him to delete any posts - manually add an entry to `/admins/$index/email: admin@email.com`. For instance `/admins/1/email: bob@gmail.com`. To database
 
 
